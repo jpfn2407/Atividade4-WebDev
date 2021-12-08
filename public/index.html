@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <html style="font-size: 16px;">
-  
-  
+
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -59,6 +58,14 @@
       Registar
     </button>
 
+    <a
+      type="button"
+      class="btn btn-secondary"
+      href="help.html"
+    >
+      Como registar, autenticar e fazer login 
+  </a>
+
 
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-header u-image u-shading u-header" id="sec-5d8c" data-image-width="2000" data-image-height="1000"><div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h1 style="font-family: fantasy; font-variant: small-caps ; font-style: italic" class="u-align-center u-text u-text-body-alt-color u-text-default u-text-1">Preço da Cerveja</h1>
@@ -77,10 +84,10 @@
               <th >Loja</th>
               <th >Marca</th>
               <th >Tamanho</th>
-              <th class="sortable table__header " onclick="sortNumbers(3)">Preço Atual</th>
-              <th class="sortable table__header " onclick="sortNumbers(4)">Preço Antigo</th>
-              <th class="sortable table__header " onclick="sortNumbers(5)">Desconto</th>
-              <th class="sortable table__header " onclick="sortNumbers(6)">Preço por Litro</th>
+              <th class="sortable table__header" onclick="sortNumbers(3)">Preço Atual</th>
+              <th class="sortable table__header" onclick="sortNumbers(4)">Preço Antigo</th>
+              <th class="sortable table__header" onclick="sortNumbers(5)">Desconto</th>
+              <th class="sortable table__header" onclick="sortNumbers(6)">Preço por Litro</th>
             </tr>
           </thead>
           
@@ -95,7 +102,6 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
         <!-- Modal para registar novo utilizador -->
-    <!-- se retirar o data-bs-backdrop, o modal desaparece ao clicar no fundo da página -->
     <div
     class="modal fade"
     id="modalRegistar"
@@ -158,7 +164,6 @@
   </div>
 
   <!-- Modal para fazer login -->
-  <!-- se retirar o data-bs-backdrop, o modal desaparece ao clicar no fundo da página -->
   <div
     class="modal fade"
     id="modalLogin"
@@ -225,6 +230,7 @@
 
         <!-- Codigo antigo para carregar quando a pagina carregava-->
         <!--<script class="u-script" type="module" src="./js/onload.js" defer=""></script>-->
+
         <script src="js/users.js"></script>
 
       </div>

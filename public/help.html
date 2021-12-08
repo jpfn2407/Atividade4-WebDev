@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html style="font-size: 16px;">
+  
+<h1><strong>Como registar</strong></h1>
+<ol>
+<li>Abrir a janela de registar.</li>
+<li>Inserir um user e uma senha (tamanho minimo 4 letras).</li>
+<li>Depois de registado, o seguinte deve aparecer no popup:</li>
+<img src="./images/tut1.png" class="img-fluid">
+<li>E o seguinte deve aparecer na consola do visual studio (<strong>se inserir um utilizador e n&atilde;o for um email, ira aparecer uma mensagem de erro no visual studio, mas &eacute; s a avisar que o que foi inserido n&atilde;o &eacute; um email</strong>):</li>
+<img src="./images/tut2.png" class="img-fluid">
+<li>Depois disto, o utilizador fica registado na base de dados.</li>
+</ol>
+<p>&nbsp;</p>
+<h1>Como autenticar</h1>
+<ol>
+<li>Antes de conseguir fazer login, &eacute; necessario autenticar o utilizador criado no passo anterior.</li>
+<li>Abrir o ficheiro "users.db" que se encontra na diretoria root do trabalho.</li>
+<li>Localizar o utilizador que foi acabado de criar, e copiar o "confirmation token" (sem as aspas):</li>
+<img src="./images/tut3.png" class="img-fluid">
+<li>Depois de ter copiado o token, deve abrir o site <a href="localhost:42080/api/auth/confirm/"><span style="text-decoration: underline;">localhost:42080/api/auth/confirm/</span></a> e inserir no final do link o token que foi copiado. Deve ficar parecido com isto:</li>
+<img src="./images/tut4.png" class="img-fluid">
+<li>Depois de inserir o site com o token, deve clicar enter, e o seguinte deve aparecer no site em caso de sucesso:</li>
+<img src="./images/tut5.png" class="img-fluid">
+<li>Ap&oacute;s isto, o utilizador encontra-se registado no site.</li>
+</ol>
+<p>&nbsp;</p>
+<h1>Como fazer login</h1>
+<ol>
+<li>Depois de seguir o registar e o autenticar, pode clicar no botao de login e entrar com o utilizador criado.</li>
+<li>Depois de fazer o login, a informa&ccedil;&atilde;o deve aparecer no site.</li>
+<li>Cada vez que der refresh no site, tem de fazer login outra vez.</li>
+</ol>
+</html>
